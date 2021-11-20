@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\CommandAPISolution\\CommandAPISolution\\CommandAPISolution.csproj": {}
+    "C:\\Users\\User\\Desktop\\Les Jackson\\Project\\src\\CommandAPISolution\\CommandAPISolution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\CommandAPISolution\\CommandAPISolution\\CommandAPISolution.csproj": {
+    "C:\\Users\\User\\Desktop\\Les Jackson\\Project\\src\\CommandAPISolution\\CommandAPISolution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\CommandAPISolution\\CommandAPISolution\\CommandAPISolution.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Les Jackson\\Project\\src\\CommandAPISolution\\CommandAPISolution.csproj",
         "projectName": "CommandAPISolution",
-        "projectPath": "C:\\Users\\User\\source\\repos\\CommandAPISolution\\CommandAPISolution\\CommandAPISolution.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Les Jackson\\Project\\src\\CommandAPISolution\\CommandAPISolution.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\CommandAPISolution\\CommandAPISolution\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Les Jackson\\Project\\src\\CommandAPISolution\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,28 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.21, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
