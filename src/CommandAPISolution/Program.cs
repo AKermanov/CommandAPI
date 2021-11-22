@@ -23,10 +23,10 @@ namespace CommandAPISolution
                 try
                 {
                     var context = scope.ServiceProvider.GetService<CommandContext>();
-                  //  context.Database.EnsureDeleted();
+                  //context.Database.EnsureDeleted();
                     context.Database.Migrate();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     Console.WriteLine("An error occurred while migrating the database.");
                 }

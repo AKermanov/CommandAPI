@@ -1,5 +1,6 @@
 using CommandAPI.Data;
 using CommandAPISolution.Data;
+using CommandAPISolution.Seeder;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,6 +14,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Newtonsoft.Json.Serialization;
 
 namespace CommandAPISolution
 {
@@ -30,13 +33,22 @@ namespace CommandAPISolution
         {
             services.AddDbContext<CommandContext>(
                 options => options.UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection")));
+            services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<ICommandAPIRepo, SqlCommandAPIRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            using(var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                var dbContext = serviceScope.ServiceProvider.GetRequiredService<CommandContext>();
+                dbContext.Database.Migrate();
+                new ApplicationDbContextSeeder().Seed(dbContext, serviceScope.ServiceProvider);
+            }
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

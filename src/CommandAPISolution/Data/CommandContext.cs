@@ -15,6 +15,7 @@ namespace CommandAPISolution.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            /*
             modelBuilder.Entity<Command>().HasData(
                 new Command()
                 {
@@ -38,6 +39,7 @@ namespace CommandAPISolution.Data
                     Platform = ".Net Core Ef"
                 }
                 );
+            */
             base.OnModelCreating(modelBuilder);
         }
     }

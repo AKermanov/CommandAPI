@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandAPISolution", "CommandAPISolution\CommandAPISolution.csproj", "{32D1A194-948B-489C-BCDF-D36DC8665A59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandAPISolution", "CommandAPISolution\CommandAPISolution.csproj", "{32D1A194-948B-489C-BCDF-D36DC8665A59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandAPI.Tests", "CommandAPI.Tests\CommandAPI.Tests.csproj", "{137F351C-3C46-4514-B5FF-EF02BB587931}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandAPI.Tests", "CommandAPI.Tests\CommandAPI.Tests.csproj", "{137F351C-3C46-4514-B5FF-EF02BB587931}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

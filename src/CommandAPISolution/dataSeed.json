@@ -1,0 +1,17 @@
+[
+  {
+    "howTo": "How to generete migration",
+    "commandLine": "dotnet ef migrations add <Name of Migration>",
+    "platform": ".Net Core Ef"
+  },
+  {
+    "howTo": "Run Migrations",
+    "commandLine": "dotnet ef database update",
+    "platform": ".Net Core Ef"
+  },
+  {
+    "howTo": "List active migrations",
+    "commandLine": "dotnet ef migrations list",
+    "platform": ".Net Core Ef"
+  }
+]
