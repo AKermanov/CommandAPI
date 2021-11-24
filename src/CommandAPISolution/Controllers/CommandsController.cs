@@ -71,7 +71,7 @@
         }
 
         [HttpPatch("{id}")]
-        public ActionResult PartailConnabdUpdate(int id, JsonPatchDocument<CommandUpdateDto> patchDoc)
+        public ActionResult PartialCommandUpdate(int id, JsonPatchDocument<CommandUpdateDto> patchDoc)
         {
             var commandModelFromRepo = _repository.GetCommandById(id);
             if (commandModelFromRepo == null)
