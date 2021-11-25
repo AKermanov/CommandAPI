@@ -26,7 +26,7 @@ The project support CRUD requests at the following routes:
 | **Request Type** | **URI**  | **Request Body** | **Functionality** |
 | --- | --- |--- | --- |
 | **HTTPGET**  | `http://localhost:5000/api/commands`|none|Get all commands from the database.|
-| **HTTPGET**  | `http://localhost:5000/api/commands/{id}}` |none|Get a command with Id=1.|
+| **HTTPGET**  | `http://localhost:5000/api/commands/{id}}` |none|Get a command with a given Id.|
 | **HTTPPOST**  | `http://localhost:5000/api/commands`  |`{"howTo": "Create and EF migration","platform": "Entity Framework Package Menager Console","commandLine": "add-migration <name of migration>"}`|Create new command.|
 | **HTTPUT**  | `http://localhost:5000/api/commands/{id}`|`{"howTo": "Run a .NET Core App","platform": ".NET Core CLI","commandLine": "dotnet run"}`|Fully update command with the given Id.|
 | **HTTPPATCH**  | `http://localhost:5000/api/commands/{id}`|`[{"op": "replace","path": "/howto","value": "Run a .NET Core 3.1 App"}]`|Update part of a single resource (by Id)|
