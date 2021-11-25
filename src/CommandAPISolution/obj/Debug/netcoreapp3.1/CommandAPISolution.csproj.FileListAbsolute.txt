@@ -86,3 +86,6 @@ C:\Users\User\Desktop\Les Jackson\Project\src\CommandAPISolution\obj\Debug\netco
 C:\Users\User\Desktop\Les Jackson\Project\src\CommandAPISolution\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\User\Desktop\Les Jackson\Project\src\CommandAPISolution\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\User\Desktop\Les Jackson\Project\src\CommandAPISolution\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\User\Desktop\Les Jackson\Project\src\CommandAPISolution\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\User\Desktop\Les Jackson\Project\src\CommandAPISolution\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+C:\Users\User\Desktop\Les Jackson\Project\src\CommandAPISolution\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
